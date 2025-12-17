@@ -138,4 +138,27 @@ document.getElementById('contactForm').addEventListener('submit', async function
         alert('Ошибка сети');
     }
 });
+// Открытие лайтбокса при клике на фото портфолио
+document.querySelectorAll('.portfolio-slider img').forEach(img => {
+    img.addEventListener('click', () => {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        
+        lightboxImg.src = img.src;
+        lightbox.classList.remove('hidden');
+        lightbox.classList.add('flex');
+    });
+});
 
+// Закрытие
+function closeLightbox() {
+    document.getElementById('lightbox').classList.add('hidden');
+    document.getElementById('lightbox').classList.remove('flex');
+}
+
+// Закрытие по клику на фон
+document.getElementById('lightbox').addEventListener('click', (e) => {
+    if (e.target.id === 'lightbox') {
+        closeLightbox();
+    }
+});
