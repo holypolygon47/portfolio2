@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио</title>
+    <title>HOLYPOLYGON</title>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -42,6 +42,10 @@
             font-family: 'Phorssa';
             src: url('fonts/Phorssa.ttf') format('truetype');
         }
+        @font-face {
+            font-family: 'Monocraft';
+            src: url('fonts/Monocraft.otf') format('truetype');
+        }
         body {
             overflow-x: hidden;
         }
@@ -53,12 +57,12 @@
         <header class="bg-custom-yellow h-24 w-full flex items-center fixed z-50">
             <img src="images/logo.png" class="h-24 ml-[106px] mr-[250px]">
             <nav class="flex gap-[22px]">
-                <a href="#main" class="text-custom-red text-[27px] font-mono">главная</a>
-                <a href="#about-anchor" class="text-custom-red text-[27px] font-mono">обо мне</a>
-                <a href="#skills-anchor" class="text-custom-red text-[27px] font-mono">навыки</a>
-                <a href="#quali-anchor" class="text-custom-red text-[27px] font-mono">квалификация</a>
-                <a href="#pf-anchor" class="text-custom-red text-[27px] font-mono">портфолио</a>
-                <a href="#contacts-anchor" class="text-custom-red text-[27px] font-mono">связаться</a>
+                <a href="#main" class="text-custom-red text-[27px] font-mono hover:scale-105 transition-transform duration-200">главная</a>
+                <a href="#about-anchor" class="text-custom-red text-[27px] font-mono hover:scale-105 transition-transform duration-200">обо мне</a>
+                <a href="#skills-anchor" class="text-custom-red text-[27px] font-mono hover:scale-105 transition-transform duration-200">навыки</a>
+                <a href="#quali-anchor" class="text-custom-red text-[27px] font-mono hover:scale-105 transition-transform duration-200">квалификация</a>
+                <a href="#pf-anchor" class="text-custom-red text-[27px] font-mono hover:scale-105 transition-transform duration-200">портфолио</a>
+                <a href="#contacts-anchor" class="text-custom-red text-[27px] font-mono hover:scale-105 transition-transform duration-200">связаться</a>
             </nav>
         </header>
             <div class="absolute top-[50px] left-[-125px] w-[200px] h-[200px] fixed z-0">
@@ -75,12 +79,13 @@
         <!-- Main Section -->
         <section id="main" class="absolute z-10">
             <div class="absolute top-[600px] left-[625px] w-[800px]">
+                <h2 class="sr-only">главная</h2>
                 <p class="font-mono text-[37px]">дизайнер, иллюстратор, разработчик <br> и еще много чего умею!!!!!!!</p>
             </div>
         </section>
 
         <!-- Telegram Button -->
-        <a href="https://t.me/holypolygon" target="_blank" class="absolute z-40 top-[758px] left-[883px] w-[508px] h-20 flex items-center no-underline">
+        <a href="https://t.me/holypolygon" target="_blank" class="absolute z-40 top-[758px] left-[883px] w-[508px] h-20 flex items-center no-underline hover:scale-[1.02] transition-transform duration-300">
             <div class="absolute w-[458px] h-full bg-custom-red -z-10"></div>
             <img src="images/телеграм.png" class="h-[60px] ml-5 z-10 relative">
             <span class="font-mono text-white text-[43px] ml-8 z-10 relative whitespace-nowrap">напишите мне!!!</span>
@@ -90,7 +95,8 @@
         <section id="about" class="absolute z-10">
             <div class="absolute top-[970px]" id="about-anchor"></div>
             <div class="absolute top-[1119px] left-[43px] w-[800px]">
-                <p class="font-hand text-[213px]">мой</p>
+                <h2 class="sr-only">мой опыт</h2>
+                <h2 class="font-hand text-[213px]">мой</h2>
             </div>
             <div class="absolute top-[1481px] left-[128px] w-[714px]">
                 <p class="font-mono text-[22px] mb-5">дизайнер, который немного разработчик, или наоборот — решаю задачи, а не ярлыки!!! пока что у меня в резюме нет графы «официальная работа», зато есть тонна учебных проектов, где я оттачивал навыки до блеска</p>
@@ -102,7 +108,7 @@
         <section id="skills" class="absolute z-10">
             <div class="absolute top-[1950px]" id="skills-anchor"></div>
             <div class="absolute top-[1980px] left-[320px] w-[800px]">
-                <p class="font-hand text-custom-yellow text-[320px]">СКИЛЛЫ</p>
+                <h2 class="font-hand text-custom-yellow text-[320px]">СКИЛЛЫ</h2>
             </div>
             <div class="absolute top-[2360px] left-[128px] w-[714px]">
                 <p class="font-phorssa text-custom-red text-[107px] mb-5">дизайн</p>
@@ -125,6 +131,7 @@
 
         <!-- quali Section -->
         <section id="quali" class="absolute z-10">
+            <h2 class="sr-only">квалификация</h2>
             <div class="absolute top-[3250px]" id="quali-anchor"></div>
             <div class="absolute top-[4080px] left-[289px] w-[400px]">
                 <p class="font-mono text-[37px]">МАУ «Детская Художественная школа» 2021 г.</p>
@@ -142,6 +149,7 @@
 
         <!-- offers Section -->
         <section id="offers" class="absolute z-10">
+            <h2 class="sr-only">услуги</h2>
             <div class="absolute top-[4000px]" id="offers-anchor"></div>
             <div class="absolute top-[4542px] left-[128px] w-[1000px]">
                 <p class="font-monocraft text-custom-gray text-[50px]">векторные/растровые иллюстрации</p>
@@ -163,6 +171,7 @@
 
         <!-- pf Section -->
         <section id="pf" class="absolute z-10">
+            <h2 class="sr-only">портфолио</h2>
             <div class="absolute top-[5400px]" id="pf-anchor"></div>
             <div class="absolute top-[5956px] left-[128px] w-[450px]">
                 <p class="font-mono text-custom-red text-[32px]">тут мои нереальные иллюстрации</p>
@@ -201,16 +210,16 @@
               <!-- Блок кнопок -->
             <div class="absolute top-[7500px] left-[835px] w-[510px] h-[180px] bg-black/50 flex items-center pl-10 gap-20">
                 <!-- Кнопка влево -->
-                <button onclick="changeSlide(-1)" class="relative z-20 bg-transparent border-none cursor-pointer">
+                <button onclick="changeSlide(-1)" class="relative z-20 bg-transparent border-none cursor-pointer hover:scale-110 transition-transform duration-200">
                     <img src="images/влево.png" alt="Назад" class="w-16 h-28">
                 </button>
                 
                 <!-- Кнопка вправо -->
-                <button onclick="changeSlide(1)" class="bg-transparent border-none cursor-pointer z-40 relative">
+                <button onclick="changeSlide(1)" class="bg-transparent border-none cursor-pointer z-40 relative hover:scale-110 transition-transform duration-200">
                     <img src="images/вправо.png" alt="Вперед" class="w-16 h-28">
                 </button>
             </div>
-            <a href="#" onclick="openModal()" class="top-[7550px] ml-[1025px] relative w-[347px] h-[84px] flex items-center no-underline group absolute">
+            <a href="#" onclick="openModal()" class="top-[7550px] ml-[1025px] relative w-[347px] h-[84px] flex items-center no-underline group absolute hover:scale-[1.02] transition-transform duration-300">
                 <!-- Красный прямоугольник -->
                 <div class="absolute left-20 w-[255px] h-full bg-custom-red z-0"></div>
                 <!-- Текст -->
@@ -224,7 +233,7 @@
         <section id="contacts" class="absolute z-10">
             <div class="absolute top-[7750px]" id="contacts-anchor"></div>
             <div class="absolute top-[7872px] left-[313px] w-[1200px]">
-                <p class="font-monocraft text-[80px]">свяжитесь со мной</p>
+                <h2 class="font-monocraft text-[80px]">свяжитесь со мной</h2>
             </div>
             <div class="absolute top-[8170px] left-[200px] w-[714px]">
                 <p class="font-mono text-custom-gray text-[32px] mb-5">+7 995 944 13 47 <br> orangeros24@gmail.com</p>
@@ -271,7 +280,7 @@
                     <!-- Кнопка отправки -->
                     <div class="absolute top-[500px] left-[-25px]">
                         <button type="submit" 
-                                class="relative w-[500px] h-[88px] flex items-center no-underline group mt-8">
+                                class="relative w-[500px] h-[88px] flex items-center no-underline group mt-8 hover:scale-[1.02] transition-transform duration-300">
                             <!-- Красный прямоугольник слева -->
                             <div class="absolute left-0 w-[450px] h-full bg-custom-red z-0"></div>
                             
@@ -357,12 +366,12 @@
             
             <!-- Контейнер с картинкой-окошком -->
             <div class="relative w-[1000px] h-[785px]">
-                <!-- Фон окошка (твоя PNG) -->
+                <!-- Фон окошка -->
                 <img src="images/фон.png" alt="Окошко" class="w-full h-full">
                 
-                <!-- Контент внутри окошка (пока пустой) -->
+                <!-- Контент внутри окошка  -->
                 <div class="absolute inset-0 flex items-center p-12">
-                    <!-- Здесь будет контент -->
+                    
                     <div id="modalContent"></div>
                     
                     <!-- Кнопка закрытия -->
@@ -373,10 +382,10 @@
                     <!-- Блок стрелок внутри модалки -->
                     <div class="absolute top-[600px] left-[550px] 
                                 w-[350px] h-[100px] bg-black/50 flex items-center justify-end pr-10 gap-16">
-                        <button onclick="changeSlideInModal(-1)" class="bg-transparent border-none cursor-pointer">
+                        <button onclick="changeSlideInModal(-1)" class="bg-transparent border-none cursor-pointer hover:scale-105 transition-transform duration-200">
                             <img src="images/влево.png" alt="Назад" class="w-11 h-20">
                         </button>
-                        <button onclick="changeSlideInModal(1)" class="bg-transparent border-none cursor-pointer">
+                        <button onclick="changeSlideInModal(1)" class="bg-transparent border-none cursor-pointer hover:scale-105 transition-transform duration-200">
                             <img src="images/вправо.png" alt="Вперед" class="w-11 h-20">
                         </button>
                     </div>
@@ -404,10 +413,10 @@
             
             <div class="mt-5">
                 <nav class="flex flex-row gap-[34px]">
-                    <a href="#main" class="font-mono text-custom-yellow text-[25px] no-underline">главная</a>
-                    <a href="#offers-anchor" class="font-mono text-custom-yellow text-[25px] no-underline">услуги</a>
-                    <a href="#pf-anchor" class="font-mono text-custom-yellow text-[25px] no-underline">портфолио</a>
-                    <a href="#contacts-anchor" class="font-mono text-custom-yellow text-[25px] no-underline">связаться</a>
+                    <a href="#main" class="font-mono text-custom-yellow text-[25px] no-underline hover:scale-105 transition-transform duration-200">главная</a>
+                    <a href="#offers-anchor" class="font-mono text-custom-yellow text-[25px] no-underline hover:scale-105 transition-transform duration-200">услуги</a>
+                    <a href="#pf-anchor" class="font-mono text-custom-yellow text-[25px] no-underline hover:scale-105 transition-transform duration-200">портфолио</a>
+                    <a href="#contacts-anchor" class="font-mono text-custom-yellow text-[25px] no-underline hover:scale-105 transition-transform duration-200">связаться</a>
                 </nav>
             </div>
         </div>
